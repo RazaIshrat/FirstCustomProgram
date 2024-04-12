@@ -1,0 +1,34 @@
+{
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "SDL2_game",
+			"command": "C:\\msys64\\mingw32\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"game.c",
+				"-o",
+				"main.exe",
+				"-IC:\\msys64\\mingw32\\include",
+				"-LC:\\msys64\\mingw32\\lib",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-lSDL2_image",
+				"-lSDL2_mixer",
+				"-lSDL2_ttf"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	],
+	"version": "2.0.0"
+}
